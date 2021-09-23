@@ -1,11 +1,12 @@
 <?php
+use Swoole\Coroutine\System;
 
 go(function() {
-    sleep(1);
-    echo 'a';
+    System::sleep(1);
+    echo 'Hello ';
 });
 
 go(function() {
-    sleep(2);
-    echo 'b';
+    System::sleep(2);
+    echo "PicPay Lovers! <3";
 });
