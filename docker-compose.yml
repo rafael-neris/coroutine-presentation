@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    container_name: presentation
+    image: leocavalcante/dwoole:dev
+    volumes:
+      - ./:/app
+    ports:
+      - "9501:9501"
